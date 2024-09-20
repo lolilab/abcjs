@@ -40,7 +40,7 @@ function renderOne(div, tune, params, tuneNumber, lineOffset) {
     }
     else if (params.viewportVertical) {
         // Create an inner div that holds the music, so that the passed in div will be the viewport.
-        div.innerHTML = '<div class="abcjs-inner scroll-amount"></div>';
+        div.innerHTML = '<div class="abcjs-inner  "></div>';
         // div.style.overflowX = "scroll";
         // div.style.overflowY = "hidden";
         div = div.children[0]; // The music should be rendered in the inner div.
