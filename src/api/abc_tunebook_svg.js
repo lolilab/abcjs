@@ -29,20 +29,20 @@ try {
 function renderOne(div, tune, params, tuneNumber, lineOffset) {
     if (params.viewportHorizontal) {
         // Create an inner div that holds the music, so that the passed in div will be the viewport.
-        div.innerHTML = '<div class="abcjs-inner"></div>';
-        if (params.scrollHorizontal) {
-            div.style.overflowX = "scroll";
-            div.style.overflowY = "hidden";
-        } else
-            div.style.overflow = "hidden";
+        // div.innerHTML = '<div class="abcjs-inner"></div>';
+        // if (params.scrollHorizontal) {
+        //     div.style.overflowX = "scroll";
+        //     div.style.overflowY = "hidden";
+        // } else
+        //     div.style.overflow = "hidden";
         resizeDivs[div.id] = div; // We use a hash on the element's id so that multiple calls won't keep adding to the list.
         div = div.children[0]; // The music should be rendered in the inner div.
     }
     else if (params.viewportVertical) {
         // Create an inner div that holds the music, so that the passed in div will be the viewport.
         div.innerHTML = '<div class="abcjs-inner scroll-amount"></div>';
-        div.style.overflowX = "scroll";
-        div.style.overflowY = "hidden";
+        // div.style.overflowX = "scroll";
+        // div.style.overflowY = "hidden";
         div = div.children[0]; // The music should be rendered in the inner div.
     }
     else
