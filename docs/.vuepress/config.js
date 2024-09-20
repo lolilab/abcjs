@@ -11,6 +11,6 @@ export default {
 	head: [
 		['link', { rel: 'icon', href: '/abcjs/favicon.ico' }],
 		['link', { rel:"stylesheet", type: "text/css", href: 'https://paulrosen.github.io/abcjs/abcjs-audio.css'}],
-		['script', { src: "https://paulrosen.github.io/abcjs/dist/abcjs-basic.js", type:"text/javascript" }]
+		['script', { src: "https://cdn.jsdelivr.net/gh/lolilab/abcjs@master/dist/abcjs-basic.js", type:"text/javascript" }]
 	],
 };
