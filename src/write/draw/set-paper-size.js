@@ -26,7 +26,7 @@ function setPaperSize(renderer, maxwidth, scale, responsive) {
 	];
 	renderer.paper.insertStyles(".abcjs-dragging-in-progress text, .abcjs-dragging-in-progress tspan {" + styles.join(" ") + "}");
 
-	var parentStyles = { overflow: "scroll" };
+	var parentStyles = { };
 	if (responsive === 'resize') {
 		renderer.paper.setResponsiveWidth(w, h);
 	} else {
