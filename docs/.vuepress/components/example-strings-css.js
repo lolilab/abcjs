@@ -27,7 +27,6 @@ transition: opacity .5s ease;
 #source {
 font-size: 18px;
 max-width: 700px;
-overflow: auto;
 font-family: "Lucida Console", Monaco, monospace;
 white-space: nowrap;
 }

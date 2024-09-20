@@ -165,7 +165,6 @@
 <style>
 	.timing-callbacks .output {
 		max-height: 600px;
-		overflow: auto;
 	}
 	.timing-callbacks .beat-callback {
 		padding: 4px;
