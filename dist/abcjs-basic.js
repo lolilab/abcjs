@@ -23970,7 +23970,7 @@ function splitSvgIntoLines(renderer, output, title, responsive, scale) {
     var gapBetweenLines = box.y - nextTop; // take the margin into account
     var height = box.height + gapBetweenLines;
     var wrapper = document.createElement("div");
-    var divStyles = "overflow: scroll;";
+    var divStyles = "overflow-x: scroll; overflow-y: hidden;";
     if (responsive !== 'resize') divStyles += "height:" + height * scale + "px;";
     wrapper.setAttribute("style", divStyles);
     var svg = duplicateSvg(source);
@@ -26241,7 +26241,8 @@ Svg.prototype.setResponsiveWidth = function (w, h) {
     var padding = h / w * 100;
     this.svg.parentNode.style['padding-bottom'] = padding + "%";
     this.svg.parentNode.style['vertical-align'] = "middle";
-    this.svg.parentNode.style['overflow'] = "scroll";
+    this.svg.parentNode.style['overflow-x'] = "scroll";
+    this.svg.parentNode.style['overflow-y'] = "hidden";
   }
 };
 Svg.prototype.setSize = function (w, h) {

@@ -55,7 +55,8 @@ Svg.prototype.setResponsiveWidth = function (w, h) {
 		var padding = h / w * 100;
 		this.svg.parentNode.style['padding-bottom'] = padding + "%";
 		this.svg.parentNode.style['vertical-align'] = "middle";
-		this.svg.parentNode.style['overflow'] = "scroll";
+		this.svg.parentNode.style['overflow-x'] = "scroll";
+		this.svg.parentNode.style['overflow-y'] = "hidden";
 	}
 };
 
