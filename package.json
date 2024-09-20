@@ -1,6 +1,6 @@
 {
   "name": "@andatoshiki/abcjs",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Renderer for abc music notation",
   "main": "index.js",
   "types": "types/index.d.ts",
